@@ -1,0 +1,5 @@
+{
+  "name": "Glic.A1: Assistente de Insulinoterapia",
+  "description": "Um aplicativo moderno e elegante para médicos, utilizando algoritmos clínicos para apoiar decisões de insulinoterapia para DM2, estritamente baseado nas diretrizes SBD 2024 e PCDT DM2 do SUS.",
+  "requestFramePermissions": []
+}

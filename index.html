@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Glic.A1: Assistente de Insulinoterapia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            colors: {
+              'primary': {
+                light: '#007AFF',
+                DEFAULT: '#007AFF',
+                dark: '#0A84FF',
+              },
+              'background': {
+                light: '#F2F2F7',
+                dark: '#000000',
+              },
+              'card': {
+                light: '#FFFFFF',
+                dark: '#1C1C1E',
+              },
+              'text-primary': {
+                light: '#000000',
+                dark: '#FFFFFF',
+              },
+              'text-secondary': {
+                light: '#6B7280',
+                dark: '#8E8E93',
+              },
+              'border': {
+                light: '#E5E5EA',
+                dark: '#3A3A3C',
+              },
+              'danger': '#FF3B30',
+              'warning': '#FF9500',
+              'success': '#34C759',
+            },
+            boxShadow: {
+              'soft': '0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05)',
+            },
+            keyframes: {
+              'fade-in': {
+                '0%': { opacity: '0', transform: 'translateY(10px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              },
+              'pulse-slow': {
+                '0%, 100%': { opacity: '1' },
+                '50%': { opacity: '.5' },
+              },
+              'progress-indeterminate': {
+                '0%': { transform: 'translateX(-100%) scaleX(0.5)' },
+                '50%': { transform: 'translateX(0) scaleX(0.2)' },
+                '100%': { transform: 'translateX(100%) scaleX(0.5)' },
+              }
+            },
+            animation: {
+              'fade-in': 'fade-in 0.5s ease-out forwards',
+              'pulse-slow': 'pulse-slow 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+              'progress-indeterminate': 'progress-indeterminate 1.5s ease-in-out infinite',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        -webkit-user-select: none; /* Safari */
+        -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* IE10+/Edge */
+        user-select: none; /* Standard */
+      }
+      input, textarea {
+        -webkit-user-select: auto; /* Safari */
+        -moz-user-select: auto; /* Firefox */
+        -ms-user-select: auto; /* IE10+/Edge */
+        user-select: auto; /* Standard */
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.29.1",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.553.0",
+    "firebase/app": "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js",
+    "firebase/firestore": "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js",
+    "firebase/": "https://aistudiocdn.com/firebase@^12.6.0/"
+  }
+}
+</script>
+</head>
+  <body class="bg-background-light dark:bg-background-dark">
+    <div id="root"></div>
+  </body>
+</html>
